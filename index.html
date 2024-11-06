@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijouterie Luxueuse</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Bijouterie Luxueuse</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#produits">Produits</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Section Accueil -->
+<header class="hero-section text-center text-white d-flex justify-content-center align-items-center">
+    <div class="hero-content">
+        <h1 class="display-4">Bijouterie Luxueuse</h1>
+        <p class="lead">Des bijoux d'exception pour des moments précieux</p>
+        <a href="#produits" class="btn btn-outline-light btn-lg mt-4">Découvrir nos bijoux</a>
+    </div>
+</header>
+
+<!-- Section Produits -->
+<section id="produits" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Nos Collections</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bracelet1.jpg" class="card-img-top" alt="Bracelet en or">
+                    <div class="card-body">
+                        <h5 class="card-title">Boucles d'Oreilles en Or et Diamants</h5>
+                        <p class="card-text">Des boucles d'oreilles luxueuses, serties de diamants et de saphirs, pour un éclat intemporel.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#productModal1">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bracelet2.jpg" class="card-img-top" alt="Bracelet en or">
+                    <div class="card-body">
+                        <h5 class="card-title">Pendentif en Argent et Pierre de Lune</h5>
+                        <p class="card-text">Un pendentif en argent orné d’une pierre centrale scintillante, symbole d'élégance et de mystère.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#productModal2">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bracelet3.jpg" class="card-img-top" alt="Bracelet en or">
+                    <div class="card-body">
+                        <h5 class="card-title">Bague en Argent et Grenat</h5>
+                        <p class="card-text">Une bague raffinée avec un grenat central et des incrustations délicates, symbole de passion et de raffinement.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#productModal3">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bracelet4.jpg" class="card-img-top" alt="Bracelet en or">
+                    <div class="card-body">
+                        <h5 class="card-title">Collier en Argent et Cristaux</h5>
+                        <p class="card-text">Un collier sophistiqué, orné de cristaux étincelants, parfait pour des occasions spéciales.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#productModal4">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bracelet5.jpg" class="card-img-top" alt="Bracelet en or">
+                    <div class="card-body">
+                        <h5 class="card-title">Collier en Argent et Saphirs</h5>
+                        <p class="card-text">Un collier délicat en argent, orné de saphirs bleus et de cristaux, pour une touche d’élégance rare.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#productModal5">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bracelet6.jpg" class="card-img-top" alt="Bracelet en or">
+                    <div class="card-body">
+                        <h5 class="card-title">Bracelet en Argent et Cristaux Dorés</h5>
+                        <p class="card-text">Un bracelet raffiné en argent, orné de cristaux dorés et de détails élégants, pour un style sophistiqué.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#productModal6">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez plus de cartes pour chaque produit -->
+        </div>
+    </div>
+</section>
+
+<!-- Modals pour chaque produit -->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel1">Boucles d'Oreilles en Or et Diamants</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/bracelet1.jpg" class="img-fluid" alt="Bracelet en or">
+                <p>Laissez-vous séduire par l’élégance de ces boucles d’oreilles uniques, réalisées en or finement travaillé et ornées de pierres précieuses. Chaque boucle est sertie de diamants brillants et de saphirs scintillants, soigneusement sélectionnés pour leur éclat et leur pureté. Avec leurs courbes délicates et leur design raffiné, ces boucles d'oreilles incarnent l'essence même du luxe. Parfaites pour des occasions spéciales ou pour apporter une touche de sophistication à votre quotidien, elles sublimeront toutes vos tenues avec une élégance intemporelle.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel2">Pendentif en Argent et Pierre de Lune</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/bracelet2.jpg" class="img-fluid" alt="Bracelet en or">
+                <p>Ce pendentif exceptionnel en argent massif est une véritable œuvre d'art joaillière. Orné d'une pierre centrale aux reflets mystérieux, il incarne l'élégance et le raffinement. Les courbes délicatement sculptées de l'argent entourent la pierre de manière à capter la lumière sous tous les angles, créant un éclat envoûtant. Ce bijou est idéal pour ajouter une touche de charme intemporel à votre tenue, que ce soit pour une soirée élégante ou pour un look quotidien raffiné. Un choix parfait pour ceux qui apprécient la beauté authentique et l'artisanat de haute qualité.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel3">Bague en Argent et Grenat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/bracelet3.jpg" class="img-fluid" alt="Bracelet en or">
+                <p>Cette bague majestueuse en argent massif est magnifiquement ornée d'un grenat d'un rouge profond, entouré de détails finement ciselés et de petites pierres noires scintillantes. Chaque courbe et chaque incrustation de cette pièce est pensée pour capturer l’essence de l’élégance et de la passion. Le grenat, pierre symbolisant le pouvoir et la vitalité, attire le regard avec son éclat captivant, tandis que l’argent travaillé met en valeur le design artisanal. Idéale pour ceux qui souhaitent ajouter une touche de luxe et de caractère à leur style, cette bague incarne un équilibre parfait entre tradition et modernité.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel4">Collier en Argent et Cristaux</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/bracelet4.jpg" class="img-fluid" alt="Bracelet en or">
+                <p>Ce collier somptueux en argent massif est orné de cristaux étincelants qui captent la lumière avec élégance. Chaque cristal est serti avec précision, formant une composition harmonieuse qui met en valeur la beauté et le savoir-faire artisanal. Le design unique de ce collier est à la fois moderne et intemporel, ajoutant une touche de sophistication à toute tenue. Que ce soit pour une soirée de gala ou une occasion spéciale, ce bijou est conçu pour faire ressortir votre élégance naturelle et vous faire briller.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel5">Collier en Argent et Saphirs</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/bracelet5.jpg" class="img-fluid" alt="Bracelet en or">
+                <p>Ce collier en argent exquis est embelli de saphirs bleus et de cristaux étincelants qui reflètent subtilement la lumière. Avec son design élégant et sa finition soignée, chaque détail de ce bijou est conçu pour capturer l’essence de la beauté. Les pierres de saphir, avec leur teinte bleue profonde, ajoutent une touche de mystère et de sophistication, tandis que les cristaux apportent un éclat scintillant. Ce collier est idéal pour les occasions où l'élégance est de mise, offrant une allure gracieuse qui rehaussera n'importe quelle tenue.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel6" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel6">Bracelet en Argent et Cristaux Dorés</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/bracelet6.jpg" class="img-fluid" alt="Bracelet en or">
+                <p>Ce bracelet en argent est une véritable pièce d’exception, sublimée par des cristaux dorés et des motifs finement sculptés. Son design entrelacé et ses lignes élégantes capturent la lumière pour un effet visuel à la fois subtil et saisissant. Chaque détail de ce bracelet a été conçu pour mettre en valeur le poignet, apportant une touche de luxe et de modernité. Idéal pour des occasions spéciales ou pour ajouter une note de sophistication à votre style quotidien, ce bracelet incarne l’art de la bijouterie dans sa forme la plus pure.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Section À propos -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">À propos de nous</h2>
+        <p class="text-center">Bienvenue chez Bijouterie Luxueuse, où chaque bijou raconte une histoire d'élégance et de raffinement. Depuis plus de 30 ans, nous sommes dédiés à l'art de la joaillerie, créant des pièces uniques qui célèbrent les moments précieux de la vie. Nos créations, conçues avec le plus grand soin, sont le fruit d'un savoir-faire artisanal et de matériaux d'exception, sélectionnés pour leur pureté et leur éclat.
+
+            Que vous soyez à la recherche d'un bijou intemporel ou d'une création sur mesure, notre équipe d'experts est là pour vous guider et réaliser vos envies. Nous croyons que chaque bijou doit être aussi unique que la personne qui le porte, et c'est pourquoi nous nous engageons à offrir un service personnalisé, à la hauteur de vos attentes.
+            
+            Découvrez notre collection, et laissez-vous inspirer par l'élégance et la qualité inégalée de nos bijoux, créés pour embellir chaque instant.</p>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contactez-nous</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Votre nom" name="name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Votre email" name="email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Votre message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-4">
+    <div class="container text-center">
+        <p class="mb-1">123 Rue de l'Or, Paris, France</p>
+        <p class="mb-1">Téléphone : +33 1 23 45 67 89</p>
+        <p class="mb-0">© 2024 AESIR DIGITAL. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+
+<!-- Autres scripts de dépendance -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Script de validation du formulaire -->
+<script src="contact.js"></script>
+</body>
+</html>
+
